@@ -8,8 +8,8 @@ import (
 	"database/sql"
 	"net/http"
 
-	"github.com/drone/my-metrics/handler"
-	"github.com/drone/my-metrics/metrics"
+	"github.com/BrianU/my-metrics/handler"
+	"github.com/BrianU/my-metrics/metrics"
 	
 	"github.com/kelseyhightower/envconfig"
 	"github.com/sirupsen/logrus"

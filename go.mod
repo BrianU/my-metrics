@@ -1,4 +1,4 @@
-module github.com/foo/bar
+module github.com/BrianU/my-metrics
 
 go 1.12
 
