@@ -8,5 +8,5 @@ ENV GODEBUG netdns=go
 
 COPY --from=alpine /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 
-ADD your-binary-name-here /bin/
-ENTRYPOINT ["/bin/your-binary-name-here"]
+ADD bash /bin/
+ENTRYPOINT ["/bin/bash"]

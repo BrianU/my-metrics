@@ -14,7 +14,7 @@ import (
 	"github.com/kelseyhightower/envconfig"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/gorp.v1"
-
+	_ "github.com/lib/pq"
 	_ "github.com/joho/godotenv/autoload"
 )
 
