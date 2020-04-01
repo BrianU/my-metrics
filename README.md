@@ -22,7 +22,7 @@ $ docker run -d \
   --name=metrics brian-metrics 
 ```
 
-Configure Prometheus:
+dConfigure Prometheus:
 
 ```text
 global:
