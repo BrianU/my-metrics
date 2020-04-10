@@ -44,3 +44,15 @@ func registerRunningBuildCount(db *gorp.DbMap) {
 		}),
 	)
 }
+
+func registerFailedBuildCount(db *gorp.DbMap) {
+	prometheus.MustRegister(
+		prometheus.NewGaugeFunc(prometheus.GaugeOpts{
+			Name: "drone_failed_builds",
+			Help: "Total number of failed builds.",
+		}, func() float64 {
+			i, _ := db.SelectFloat("SELECT count(*) FROM builds WHERE build_status = 'failed'")
+			return i
+		}),
+	)
+}

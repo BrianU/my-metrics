@@ -19,4 +19,5 @@ func Register(db *gorp.DbMap) {
 	registerRepoCount(db)
 	registerRunningBuildCount(db)
 	registerUserCount(db)
+	registerFailedBuildCount(db)
 }

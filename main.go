@@ -10,16 +10,16 @@ import (
 
 	"github.com/BrianU/my-metrics/handler"
 	"github.com/BrianU/my-metrics/metrics"
-	
+
+	_ "github.com/joho/godotenv/autoload"
 	"github.com/kelseyhightower/envconfig"
+	_ "github.com/lib/pq"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/gorp.v1"
-	_ "github.com/lib/pq"
-	_ "github.com/joho/godotenv/autoload"
 )
 
 type spec struct {
-	Bind  string `envconfig:"DRONE_BIND" default:":3000"`
+	Bind  string `envconfig:"DRONE_BIND" default:":3001"`
 	Debug bool   `envconfig:"DRONE_DEBUG"`
 	Token string `envconfig:"DRONE_TOKEN"`
 
