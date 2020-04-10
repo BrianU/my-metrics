@@ -12,7 +12,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
-// errInvalidToken is returned when the prometheus token is invalid.
+// errInvalidToken is returned when the prometheus token is invalid. this is a test
 var errInvalidToken = errors.New("Invalid or missing prometheus token")
 
 // Handler is an http Metrics handler.
