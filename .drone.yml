@@ -10,6 +10,7 @@ steps:
   commands:
   - go build
   - go test ./...
+  - echo "This too shall pass"
 
 - name: publish
   image: plugins/docker
