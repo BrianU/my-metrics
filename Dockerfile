@@ -8,3 +8,5 @@ ENV GODEBUG netdns=go
 
 COPY --from=alpine /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 
+ENV TitsOnABull ding=aling
+
